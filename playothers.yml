@@ -1,0 +1,14 @@
+---
+- hosts: others
+  become_user: root
+  become: yes
+
+  tasks:
+    - name: Install agent zabbix.
+      command: /app/scripts/deploy.sh /app/bkoffice/files/BKOfficeAPI.war
+      
+    - name: Run command
+      command: /app/scripts/deploy.sh /app/bkoffice/files/BKOfficeFrontEnd.war
+
+    - name: Setting on system
+      command: SYSTEMCLT STOP TOMCAT  K&YZT~v{f5t)w#9a

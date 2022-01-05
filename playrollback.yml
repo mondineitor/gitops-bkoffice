@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become_user: root
+  become: yes
+
+  tasks:
+    - name: Take rpm client zabbix.
+      command: rm -RF /app/bkoffice/files/*
+      ignore_errors: yes
