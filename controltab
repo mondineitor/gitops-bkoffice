@@ -1,0 +1,3 @@
+MAILTO="service@burgerking.com.br" 
+
+0 0 * * * /usr/bin/gitops.sh  
