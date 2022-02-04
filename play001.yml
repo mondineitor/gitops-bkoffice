@@ -4,11 +4,11 @@
   become: yes
 
   tasks:
-    - name: Take rpm client zabbix.
+    - name: Install deploy-static tar.gz.
       command: /app/scripts/deploy-static.sh /app/bkoffice/files/BKOfficeFrontEnd.tar.gz
       ignore_errors: yes  
 
-    - name: Install agent zabbix.
+    - name: Install deploys-static-war.
       command: /app/scripts/deploy.sh /app/bkoffice/files/BKOfficeAPI.war
       
     - name: Run command
